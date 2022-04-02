@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TMDBUmbaApp</string>
+    <string name="latestMovie">Latest Movies</string>
+    <string name="popularMovie">Popular Movies</string>
+    <string name="UpcomingMovie">Upcoming Movies</string>
+    <string name="title_latest_movie">Title:</string>
+    <string name="description_latest_movie">Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="overview"><b>OverView:  </b>%1$s</string>
+</resources>

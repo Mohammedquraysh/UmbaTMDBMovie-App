@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/latestMoviesFragment"
+        android:name="com.example.tmdbumbaapp.ui.LatestMoviesFragment"
+        android:label="fragment_latest_movies"
+        tools:layout="@layout/fragment_latest_movies" >
+        <action
+            android:id="@+id/action_latestMoviesFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.tmdbumbaapp.ui.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_latestMoviesFragment"
+            app:destination="@id/latestMoviesFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_popularMoviesFragment"
+            app:destination="@id/popularMoviesFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_upcomingMovieFragment"
+            app:destination="@id/upcomingMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularMoviesFragment"
+        android:name="com.example.tmdbumbaapp.ui.PopularMoviesFragment"
+        android:label="fragment_popular_movies"
+        tools:layout="@layout/fragment_popular_movies" >
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingMovieFragment"
+        android:name="com.example.tmdbumbaapp.ui.UpcomingMovieFragment"
+        android:label="fragment_upcoming_movie"
+        tools:layout="@layout/fragment_upcoming_movie" >
+        <action
+            android:id="@+id/action_upcomingMovieFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.example.tmdbumbaapp.ui.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" />
+</navigation>
